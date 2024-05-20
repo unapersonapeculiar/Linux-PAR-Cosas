@@ -1,0 +1,492 @@
+{
+  "vaultName": "Vault2 - Manuales",
+  "lastExport": 1716194124400,
+  "pluginVersion": "1.8.01",
+  "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title",
+  "useCustomHeadContent": false,
+  "useCustomFavicon": false,
+  "files": [
+    "Manual_de_Linux/comandos/comandos.md",
+    "Manual_de_Linux/nfs/NFS.md",
+    "Manual_de_Linux/nfs/Pasted image 20240519123108.png",
+    "Manual_de_Linux/nfs/Pasted image 20240519123301.png",
+    "Manual_de_Linux/nfs/Pasted image 20240519123900.png",
+    "Manual_de_Linux/nfs/Pasted image 20240519125249.png",
+    "Manual_de_Linux/nfs/Pasted image 20240519130222.png",
+    "Manual_de_Linux/nfs/Pasted image 20240519130430.png",
+    "Manual_de_Linux/nfs/Pasted image 20240519131541.png",
+    "Manual_de_Linux/nfs/Restos.md",
+    "Manual_de_Linux/samba/Pasted image 20240520095928.png",
+    "Manual_de_Linux/samba/Pasted image 20240520100246.png",
+    "Manual_de_Linux/samba/Pasted image 20240520100306.png",
+    "Manual_de_Linux/samba/Pasted image 20240520100400.png",
+    "Manual_de_Linux/samba/Pasted image 20240520100434.png",
+    "Manual_de_Linux/samba/Pasted image 20240520101345.png",
+    "Manual_de_Linux/samba/samba.md",
+    "Manual_de_Linux/samba/Screenshot from 2024-05-20 10-21-28.png",
+    "Manual_de_Linux/ssh/ssh.md",
+    "Manual_de_Linux/indice.md",
+    "lib/scripts/graph-wasm.wasm",
+    "lib/fonts/94f2f163d4b698242fef.otf",
+    "lib/fonts/72505e6a122c6acd5471.woff2",
+    "lib/fonts/2d5198822ab091ce4305.woff2",
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+    "lib/fonts/cb10ffd7684cd9836a05.woff2",
+    "lib/fonts/b5f0f109bc88052d4000.woff2",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
+    "lib/fonts/535a6cf662596b3bd6a6.woff2",
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/html/file-tree.html",
+    "lib/scripts/webpage.js",
+    "lib/scripts/graph-view.js",
+    "lib/scripts/graph-wasm.js",
+    "lib/scripts/graph-render-worker.js",
+    "lib/scripts/tinycolor.js",
+    "lib/scripts/pixi.js",
+    "lib/scripts/minisearch.js",
+    "lib/media/favicon.png",
+    "lib/scripts/graph-data.js",
+    "lib/styles/obsidian.css",
+    "lib/styles/global-variable-styles.css",
+    "lib/styles/main-styles.css",
+    "manual_de_linux/nfs/pasted-image-20240519123108.png",
+    "manual_de_linux/nfs/pasted-image-20240519123301.png",
+    "manual_de_linux/nfs/pasted-image-20240519130222.png",
+    "manual_de_linux/nfs/pasted-image-20240519123900.png",
+    "manual_de_linux/nfs/pasted-image-20240519125249.png",
+    "manual_de_linux/nfs/pasted-image-20240519130430.png",
+    "manual_de_linux/nfs/pasted-image-20240519131541.png",
+    "manual_de_linux/samba/pasted-image-20240520095928.png",
+    "manual_de_linux/samba/pasted-image-20240520100246.png",
+    "manual_de_linux/samba/pasted-image-20240520100306.png",
+    "manual_de_linux/samba/pasted-image-20240520100400.png",
+    "manual_de_linux/samba/pasted-image-20240520100434.png",
+    "manual_de_linux/samba/pasted-image-20240520101345.png",
+    "manual_de_linux/samba/screenshot-from-2024-05-20-10-21-28.png"
+  ],
+  "mainDependencies": [
+    "lib/scripts/graph-wasm.wasm",
+    "lib/fonts/94f2f163d4b698242fef.otf",
+    "lib/fonts/72505e6a122c6acd5471.woff2",
+    "lib/fonts/2d5198822ab091ce4305.woff2",
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+    "lib/fonts/cb10ffd7684cd9836a05.woff2",
+    "lib/fonts/b5f0f109bc88052d4000.woff2",
+    "lib/fonts/cbe0ae49c52c920fd563.woff2",
+    "lib/fonts/535a6cf662596b3bd6a6.woff2",
+    "lib/fonts/70cc7ff27245e82ad414.ttf",
+    "lib/fonts/454577c22304619db035.ttf",
+    "lib/fonts/52ac8f3034507f1d9e53.ttf",
+    "lib/fonts/05b618077343fbbd92b7.ttf",
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+    "lib/media/874d8b8e340f75575caa.svg",
+    "lib/html/file-tree.html",
+    "lib/scripts/webpage.js",
+    "lib/scripts/graph-view.js",
+    "lib/scripts/graph-wasm.js",
+    "lib/scripts/graph-render-worker.js",
+    "lib/scripts/tinycolor.js",
+    "lib/scripts/pixi.js",
+    "lib/scripts/minisearch.js",
+    "lib/media/favicon.png",
+    "lib/scripts/graph-data.js",
+    "lib/styles/obsidian.css",
+    "lib/styles/global-variable-styles.css",
+    "lib/styles/main-styles.css"
+  ],
+  "fileInfo": {
+    "Manual_de_Linux/comandos/comandos.md": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 0,
+      "exportedPath": "manual_de_linux/comandos/comandos.html",
+      "dependencies": []
+    },
+    "Manual_de_Linux/nfs/NFS.md": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 2915,
+      "exportedPath": "manual_de_linux/nfs/nfs.html",
+      "dependencies": [
+        "manual_de_linux/nfs/pasted-image-20240519123108.png",
+        "manual_de_linux/nfs/pasted-image-20240519123301.png",
+        "manual_de_linux/nfs/pasted-image-20240519130222.png",
+        "manual_de_linux/nfs/pasted-image-20240519123900.png",
+        "manual_de_linux/nfs/pasted-image-20240519125249.png",
+        "manual_de_linux/nfs/pasted-image-20240519130430.png",
+        "manual_de_linux/nfs/pasted-image-20240519131541.png"
+      ]
+    },
+    "Manual_de_Linux/nfs/Pasted image 20240519123108.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 52880,
+      "exportedPath": "manual_de_linux/nfs/pasted-image-20240519123108.png",
+      "dependencies": []
+    },
+    "Manual_de_Linux/nfs/Pasted image 20240519123301.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 55913,
+      "exportedPath": "manual_de_linux/nfs/pasted-image-20240519123301.png",
+      "dependencies": []
+    },
+    "Manual_de_Linux/nfs/Pasted image 20240519123900.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 21991,
+      "exportedPath": "manual_de_linux/nfs/pasted-image-20240519123900.png",
+      "dependencies": []
+    },
+    "Manual_de_Linux/nfs/Pasted image 20240519125249.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 15160,
+      "exportedPath": "manual_de_linux/nfs/pasted-image-20240519125249.png",
+      "dependencies": []
+    },
+    "Manual_de_Linux/nfs/Pasted image 20240519130222.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 46336,
+      "exportedPath": "manual_de_linux/nfs/pasted-image-20240519130222.png",
+      "dependencies": []
+    },
+    "Manual_de_Linux/nfs/Pasted image 20240519130430.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 13116,
+      "exportedPath": "manual_de_linux/nfs/pasted-image-20240519130430.png",
+      "dependencies": []
+    },
+    "Manual_de_Linux/nfs/Pasted image 20240519131541.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 15176,
+      "exportedPath": "manual_de_linux/nfs/pasted-image-20240519131541.png",
+      "dependencies": []
+    },
+    "Manual_de_Linux/nfs/Restos.md": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 1623,
+      "exportedPath": "manual_de_linux/nfs/restos.html",
+      "dependencies": []
+    },
+    "Manual_de_Linux/samba/Pasted image 20240520095928.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 149470,
+      "exportedPath": "manual_de_linux/samba/pasted-image-20240520095928.png",
+      "dependencies": []
+    },
+    "Manual_de_Linux/samba/Pasted image 20240520100246.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 59152,
+      "exportedPath": "manual_de_linux/samba/pasted-image-20240520100246.png",
+      "dependencies": []
+    },
+    "Manual_de_Linux/samba/Pasted image 20240520100306.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 8286,
+      "exportedPath": "manual_de_linux/samba/pasted-image-20240520100306.png",
+      "dependencies": []
+    },
+    "Manual_de_Linux/samba/Pasted image 20240520100400.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 115620,
+      "exportedPath": "manual_de_linux/samba/pasted-image-20240520100400.png",
+      "dependencies": []
+    },
+    "Manual_de_Linux/samba/Pasted image 20240520100434.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 11546,
+      "exportedPath": "manual_de_linux/samba/pasted-image-20240520100434.png",
+      "dependencies": []
+    },
+    "Manual_de_Linux/samba/Pasted image 20240520101345.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 181733,
+      "exportedPath": "manual_de_linux/samba/pasted-image-20240520101345.png",
+      "dependencies": []
+    },
+    "Manual_de_Linux/samba/samba.md": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 7480,
+      "exportedPath": "manual_de_linux/samba/samba.html",
+      "dependencies": [
+        "manual_de_linux/samba/pasted-image-20240520095928.png",
+        "manual_de_linux/samba/pasted-image-20240520100246.png",
+        "manual_de_linux/samba/pasted-image-20240520100306.png",
+        "manual_de_linux/samba/pasted-image-20240520100400.png",
+        "manual_de_linux/samba/pasted-image-20240520100434.png",
+        "manual_de_linux/samba/pasted-image-20240520101345.png",
+        "manual_de_linux/samba/screenshot-from-2024-05-20-10-21-28.png"
+      ]
+    },
+    "Manual_de_Linux/samba/Screenshot from 2024-05-20 10-21-28.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 32808,
+      "exportedPath": "manual_de_linux/samba/screenshot-from-2024-05-20-10-21-28.png",
+      "dependencies": []
+    },
+    "Manual_de_Linux/ssh/ssh.md": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 0,
+      "exportedPath": "manual_de_linux/ssh/ssh.html",
+      "dependencies": []
+    },
+    "manual_de_linux/nfs/pasted-image-20240519123108.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 52880,
+      "exportedPath": "manual_de_linux/nfs/pasted-image-20240519123108.png",
+      "dependencies": []
+    },
+    "manual_de_linux/nfs/pasted-image-20240519123301.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 55913,
+      "exportedPath": "manual_de_linux/nfs/pasted-image-20240519123301.png",
+      "dependencies": []
+    },
+    "manual_de_linux/nfs/pasted-image-20240519130222.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 46336,
+      "exportedPath": "manual_de_linux/nfs/pasted-image-20240519130222.png",
+      "dependencies": []
+    },
+    "manual_de_linux/nfs/pasted-image-20240519123900.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 21991,
+      "exportedPath": "manual_de_linux/nfs/pasted-image-20240519123900.png",
+      "dependencies": []
+    },
+    "manual_de_linux/nfs/pasted-image-20240519125249.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 15160,
+      "exportedPath": "manual_de_linux/nfs/pasted-image-20240519125249.png",
+      "dependencies": []
+    },
+    "manual_de_linux/nfs/pasted-image-20240519130430.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 13116,
+      "exportedPath": "manual_de_linux/nfs/pasted-image-20240519130430.png",
+      "dependencies": []
+    },
+    "manual_de_linux/nfs/pasted-image-20240519131541.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 15176,
+      "exportedPath": "manual_de_linux/nfs/pasted-image-20240519131541.png",
+      "dependencies": []
+    },
+    "manual_de_linux/samba/pasted-image-20240520095928.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 149470,
+      "exportedPath": "manual_de_linux/samba/pasted-image-20240520095928.png",
+      "dependencies": []
+    },
+    "manual_de_linux/samba/pasted-image-20240520100246.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 59152,
+      "exportedPath": "manual_de_linux/samba/pasted-image-20240520100246.png",
+      "dependencies": []
+    },
+    "manual_de_linux/samba/pasted-image-20240520100306.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 8286,
+      "exportedPath": "manual_de_linux/samba/pasted-image-20240520100306.png",
+      "dependencies": []
+    },
+    "manual_de_linux/samba/pasted-image-20240520100400.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 115620,
+      "exportedPath": "manual_de_linux/samba/pasted-image-20240520100400.png",
+      "dependencies": []
+    },
+    "manual_de_linux/samba/pasted-image-20240520100434.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 11546,
+      "exportedPath": "manual_de_linux/samba/pasted-image-20240520100434.png",
+      "dependencies": []
+    },
+    "manual_de_linux/samba/pasted-image-20240520101345.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 181733,
+      "exportedPath": "manual_de_linux/samba/pasted-image-20240520101345.png",
+      "dependencies": []
+    },
+    "manual_de_linux/samba/screenshot-from-2024-05-20-10-21-28.png": {
+      "modifiedTime": 1716193922859,
+      "sourceSize": 32808,
+      "exportedPath": "manual_de_linux/samba/screenshot-from-2024-05-20-10-21-28.png",
+      "dependencies": []
+    },
+    "lib/scripts/graph-wasm.wasm": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 23377,
+      "exportedPath": "lib/scripts/graph-wasm.wasm",
+      "dependencies": []
+    },
+    "lib/fonts/94f2f163d4b698242fef.otf": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 66800,
+      "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
+      "dependencies": []
+    },
+    "lib/fonts/72505e6a122c6acd5471.woff2": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 104232,
+      "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/2d5198822ab091ce4305.woff2": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 104332,
+      "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 98868,
+      "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cb10ffd7684cd9836a05.woff2": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 106876,
+      "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/b5f0f109bc88052d4000.woff2": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 105804,
+      "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/cbe0ae49c52c920fd563.woff2": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 106108,
+      "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/535a6cf662596b3bd6a6.woff2": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 111708,
+      "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
+      "dependencies": []
+    },
+    "lib/fonts/70cc7ff27245e82ad414.ttf": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 192740,
+      "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/454577c22304619db035.ttf": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 161376,
+      "exportedPath": "lib/fonts/454577c22304619db035.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/52ac8f3034507f1d9e53.ttf": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 191568,
+      "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/05b618077343fbbd92b7.ttf": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 155288,
+      "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
+      "dependencies": []
+    },
+    "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 7876,
+      "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
+      "dependencies": []
+    },
+    "lib/media/874d8b8e340f75575caa.svg": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 317,
+      "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
+      "dependencies": []
+    },
+    "lib/html/file-tree.html": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 11410,
+      "exportedPath": "lib/html/file-tree.html",
+      "dependencies": []
+    },
+    "lib/scripts/webpage.js": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 47290,
+      "exportedPath": "lib/scripts/webpage.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-view.js": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 15519,
+      "exportedPath": "lib/scripts/graph-view.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-wasm.js": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 14021,
+      "exportedPath": "lib/scripts/graph-wasm.js",
+      "dependencies": []
+    },
+    "lib/scripts/graph-render-worker.js": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 5179,
+      "exportedPath": "lib/scripts/graph-render-worker.js",
+      "dependencies": []
+    },
+    "lib/scripts/tinycolor.js": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 29832,
+      "exportedPath": "lib/scripts/tinycolor.js",
+      "dependencies": []
+    },
+    "lib/scripts/pixi.js": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 449509,
+      "exportedPath": "lib/scripts/pixi.js",
+      "dependencies": []
+    },
+    "lib/scripts/minisearch.js": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 29422,
+      "exportedPath": "lib/scripts/minisearch.js",
+      "dependencies": []
+    },
+    "lib/media/favicon.png": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 1105,
+      "exportedPath": "lib/media/favicon.png",
+      "dependencies": []
+    },
+    "lib/scripts/graph-data.js": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 545,
+      "exportedPath": "lib/scripts/graph-data.js",
+      "dependencies": []
+    },
+    "lib/styles/obsidian.css": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 157722,
+      "exportedPath": "lib/styles/obsidian.css",
+      "dependencies": []
+    },
+    "lib/styles/global-variable-styles.css": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 238,
+      "exportedPath": "lib/styles/global-variable-styles.css",
+      "dependencies": []
+    },
+    "lib/styles/main-styles.css": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 23130,
+      "exportedPath": "lib/styles/main-styles.css",
+      "dependencies": []
+    },
+    "Manual_de_Linux/indice.md": {
+      "modifiedTime": 1716194124400,
+      "sourceSize": 243,
+      "exportedPath": "manual_de_linux/indice.html",
+      "dependencies": []
+    }
+  }
+}
