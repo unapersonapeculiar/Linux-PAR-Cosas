@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 22 May 2024 14:57:26 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 22 May 2024 14:57:24 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Manual de Comandos de Red en Linux]]></title><description><![CDATA[ 
+ <br><br><br><br>Para ver el estado de todas las interfaces de red:<br>ifconfig
+Copy<br>Para ver el estado de una interfaz específica, por ejemplo eth0:<br>ifconfig eth0
+Copy<br><br>Asignar una dirección IP y máscara de subred a una interfaz:<br>ifconfig eth0 192.168.1.100 netmask 255.255.255.0
+Copy<br><br>Levantar (activar) una interfaz:<br>ifconfig eth0 up
+Copy<br>Parar (desactivar) una interfaz:<br>ifconfig eth0 down
+Copy<br><br><br>Enviar paquetes ICMP a una dirección IP o dominio:<br>ping 8.8.8.8
+Copy<br>Para enviar un número específico de paquetes:<br>ping -c 4 8.8.8.8
+Copy<br><br><br>dhclient es un cliente DHCP en sistemas Unix/Linux que se utiliza para obtener una dirección IP y otros parámetros de configuración de red automáticamente de un servidor DHCP.<br><br>Para solicitar una dirección IP para una interfaz específica:<br>dhclient eth0
+Copy<br><br>Para liberar la dirección IP obtenida:<br>dhclient -r eth0
+Copy<br><br><br>route se utiliza para mostrar y manipular la tabla de enrutamiento IP del kernel.<br><br>Mostrar la tabla de rutas:<br>route -n
+Copy<br><br>Añadir una ruta:<br>route add -net 192.168.1.0 netmask 255.255.255.0 gw 192.168.1.1
+Copy<br><br>Eliminar una ruta:<br>route del -net 192.168.1.0 netmask 255.255.255.0
+Copy<br><br><br>netstat se utiliza para mostrar las conexiones de red, las tablas de enrutamiento, las interfaces de red y las estadísticas de red.<br><br>Mostrar todas las conexiones:<br>netstat -a
+Copy<br>Mostrar conexiones TCP:<br>netstat -t
+Copy<br><br>Mostrar estadísticas de las interfaces de red:<br>netstat -i
+Copy<br><br>El comando netstat -putona combina varios parámetros para proporcionar una vista detallada de las conexiones de red y los servicios en espera. Aquí se explica cada parámetro incluido:<br>
+<br>-p: Muestra los programas (PID y nombre) asociados con las conexiones.
+<br>-u: Muestra las conexiones y puertos UDP.
+<br>-t: Muestra las conexiones y puertos TCP.
+<br>-o: Muestra el tiempo de vida (TTL) de las conexiones.
+<br>-n: Muestra los números de puerto en lugar de los nombres de servicio.
+<br>-a: Lista todas las conexiones y puertos en espera.
+<br><br>Para ejecutar el comando netstat -putona, es necesario tener privilegios de administrador. Aquí hay un ejemplo de cómo usarlo:<br>sudo netstat -putona
+Copy<br><br>El comando netstat -putona proporciona una salida que incluye la siguiente información:<br>
+<br>Protocolo: Protocolo de la conexión (TCP o UDP).
+<br>Dirección Local: Dirección IP y puerto local.
+<br>Dirección Remota: Dirección IP y puerto remoto.
+<br>Estado: Estado de la conexión (por ejemplo, ESTABLISHED, LISTENING).
+<br>PID/Programa: ID del proceso y nombre del programa asociado.
+<br>Tiempo de vida (TTL): Tiempo de vida de las conexiones.
+<br><br><br>nslookup se utiliza para consultar servidores DNS para obtener detalles de nombres de dominio o direcciones IP.<br><br>Consultar la dirección IP de un dominio:<br>nslookup example.com
+Copy<br><br>Consultar el nombre de dominio asociado a una dirección IP:<br>nslookup 8.8.8.8
+Copy<br>#7. ARP<br><br>Mostrar la tabla ARP:<br>arp -a
+Copy<br><br>Añadir una entrada ARP estática:<br>arp -s 192.168.1.2 00:11:22:33:44:55
+Copy<br><br>Eliminar una entrada ARP:<br>arp -d 192.168.1.2
+Copy<br><br><br>traceroute se utiliza para rastrear la ruta que toman los paquetes para llegar a un destino.<br><br>Rastrear la ruta a un dominio o dirección IP:<br>traceroute example.com
+Copy<br><br><br>Las subinterfaces y VLANs permiten segmentar una red física en múltiples redes lógicas.<br><br>Crear una subinterfaz para una VLAN:<br>ifconfig eth0.10 192.168.10.1 netmask 255.255.255.0
+Copy<br><br>Para configurar una VLAN utilizando el paquete vconfig:<br>
+<br>
+Instalar vconfig (si no está ya instalado):
+sudo apt-get install vlan
+Copy
+
+<br>
+Habilitar 802.1Q en el kernel:
+sudo modprobe 8021q
+Copy
+
+<br>
+Crear la VLAN:
+sudo vconfig add eth0 10
+Copy
+
+<br>
+Asignar una dirección IP a la VLAN:
+sudo ifconfig eth0.10 192.168.10.1 netmask 255.255.255.0 up
+Copy
+
+<br>Este manual proporciona una guía básica para utilizar estos comandos de red en un sistema Linux. Cada capítulo cubre un comando específico y su uso principal para administrar y diagnosticar configuraciones y problemas de red.]]></description><link>manual_de_linux\comandos\comandos.html</link><guid isPermaLink="false">Manual_de_Linux/comandos/comandos.md</guid><pubDate>Wed, 22 May 2024 14:54:55 GMT</pubDate></item><item><title><![CDATA[Manual de Configuración de NFS Versión 4]]></title><description><![CDATA[ 
+ <br><br>Se requiere administrador del sistema<br><br><br>Para instalar el paquete cliente , ejecutar el siguiente comando:<br>apt-get install nfs-common
+Copy<br><br>Para instalar el paquete del servidor, utiliza el siguiente comando:<br>apt-get install nfs-kernel-server
+Copy<br>Nota: La instalación del servidor puede no iniciar el servicio correctamente debido a posibles opciones inválidas en el archivo /etc/exports.<br><br><br>Para desactivar la autenticación Kerberos  editamos los siguientes archivos:<br>
+<br>Editar /etc/default/nfs-kernel-server:
+<br>NEED_SVCGSSD="no"
+Copy<br>Foto del resultado:<br>
+<img alt="Manual_de_Linux/nfs/Pasted image 20240519123108.png" src="manual_de_linux\nfs\pasted-image-20240519123108.png"><br>
+<br>Editar /etc/default/nfs-common:
+<br>NEED_IDMAPD="yes"
+NEED_GSSD="no"
+Copy<br>Foto del resultado:<br>
+<img alt="Manual_de_Linux/nfs/Pasted image 20240519123301.png" src="manual_de_linux\nfs\pasted-image-20240519123301.png"><br><br>Exportamos dos directorios en la red local 192.198.128.0/24. Edite el archivo /etc/exports y añada las siguientes líneas:<br>NOTA: en este caso estamos exponiendo un directorio para un rango de IPv4 especificio.<br>/tmp 192.168.128.0/24(rw,nohide,insecure,no_subtree_check,async)
+/home 192.168.128.0/24(rw,nohide,insecure,no_subtree_check,async)
+Copy<br>Foto del resultado:<img alt="Manual_de_Linux/nfs/Pasted image 20240519130222.png" src="manual_de_linux\nfs\pasted-image-20240519130222.png"><br><br>Reiniciar el servicio NFS para aplicar los cambios:<br>Metodo init.d<br>/etc/init.d/nfs-kernel-server restart
+Copy<br>Metodo systemctl:<br>Metodo service:<br><br>Para verificar los directorios compartidos, utilice el comando showmount:<br># showmount -e
+Export list for debianv1:
+/home 192.168.128.0/24
+/tmp 192.168.128.0/24
+Copy<br>Foto Resultado Final:<img alt="Manual_de_Linux/nfs/Pasted image 20240519123900.png" src="manual_de_linux\nfs\pasted-image-20240519123900.png"><br><br><br>Igual que en el servidor, configure el cliente para el mapeo de identidades sin Kerberos. Edite el archivo /etc/default/nfs-common:<br>NEED_IDMAPD=yes
+NEED_GSSD=no
+Copy<br>Foto del resultado final:<br>
+<img alt="Manual_de_Linux/nfs/Pasted image 20240519125249.png" src="manual_de_linux\nfs\pasted-image-20240519125249.png"><br><br>Reinicie el servicio nfs-common:<br>/etc/init.d/nfs-common restart
+Copy<br><br>Cree los puntos de montaje en el cliente:<br>mkdir /mnt/mitmp
+mkdir /mnt/misusuarios
+Copy<br><br>Montar los volúmenes NFS:<br>mount -t nfs -o proto=tcp,port=2049 192.168.128.192:/tmp /mnt/mitmp
+mount -t nfs -o proto=tcp,port=2049 192.168.128.192:/home /mnt/misusuarios
+Copy<br>Foto del resultado final:<br>
+<img alt="Manual_de_Linux/nfs/Pasted image 20240519130430.png" src="manual_de_linux\nfs\pasted-image-20240519130430.png"><br>Foto Resultado alternativo:<br>
+<img alt="Manual_de_Linux/nfs/Pasted image 20240519131541.png" src="manual_de_linux\nfs\pasted-image-20240519131541.png">]]></description><link>manual_de_linux\nfs\nfs.html</link><guid isPermaLink="false">Manual_de_Linux/nfs/NFS.md</guid><pubDate>Mon, 20 May 2024 07:36:20 GMT</pubDate><enclosure url="manual_de_linux\nfs\pasted-image-20240519123108.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_linux\nfs\pasted-image-20240519123108.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Restos]]></title><description><![CDATA[ 
+ <br><br><br>Cree el directorio que se va a exportar y utilice la opción bind para montar el sistema de archivos del servidor:<br># mkdir /exportacion
+# mkdir /exportacion/usuarios
+# mount --bind /home/ /exportacion/usuarios
+Copy<br>Para hacer esta exportación de forma permanente, añada la siguiente línea en el archivo /etc/fstab:<br>/home/ /exportacion/usuarios none bind 0 0
+Copy<br><br>Edite el archivo /etc/exports para exportar el sistema de archivos virtual:<br>/exportacion 192.168.128.0/24(rw,fsid=0,insecure,subtree_check,async)
+/exportacion/usuarios 192.168.128.0/24(rw,nohide,insecure,subtree_check,async)
+Copy<br>Reinicie el servicio NFS:<br># /etc/init.d/nfs-kernel-server restart
+Copy<br><br><br>Cree el punto de montaje único en el cliente:<br># mkdir /mnt/miexportacion
+Copy<br><br>Monte el sistema de archivos raíz y luego los subdirectorios exportados:<br># mount -t nfs4 -o proto=tcp,port=2049 192.168.128.192:/ /mnt/miexportacion/
+# mount -t nfs4 -o proto=tcp,port=2049 192.168.128.192:/usuarios /mnt/miexportacion/usuarios/
+Copy<br><br>Para desmontar los directorios, ejecute los comandos en orden inverso:<br># umount /mnt/miexportacion/usuarios/
+# umount /mnt/miexportacion/
+Copy<br>Con estos pasos, debería tener un servidor y cliente NFS configurados y funcionando correctamente en modo inseguro sin autenticación Kerberos.]]></description><link>manual_de_linux\nfs\restos.html</link><guid isPermaLink="false">Manual_de_Linux/nfs/Restos.md</guid><pubDate>Mon, 20 May 2024 07:36:20 GMT</pubDate></item><item><title><![CDATA[Manual de Carpetas Compartidas SAMBA desde Windows]]></title><description><![CDATA[ 
+ <br><br><br>Recomiendo un ubuntu 22.04 o debian 12<br>
+y Tener derechos de admin (su o sudo su)<br><br>
+<br>smbd: Servicio principal que maneja la autenticación de usuarios y comparte recursos.
+<br>nmbd: Servidor de nombres de Windows que actúa como cliente y servidor de nombres WINS.
+<br><br>
+<br>smbclient: Cliente estilo FTP.
+<br>smbtar: Programa equivalente al comando Unix "tar".
+<br>nmblookup: Realiza búsquedas de nombres NetBIOS sobre TCP/IP.
+<br>smbpasswd: Administrador de contraseñas.
+<br>smbstatus: Reporta las conexiones de red actuales hacia los recursos compartidos por el servidor Samba.
+<br>testparm: Verifica la sintaxis de /etc/samba/smb.conf.
+<br>testprns: Verifica las impresoras compartidas de SAMBA.
+<br><br><br>Ejecutamos el siguiente comando para instalar el servicio SAMBA:<br>apt-get install samba
+Copy<br><img alt="Manual_de_Linux/samba/Pasted image 20240520095928.png" src="manual_de_linux\samba\pasted-image-20240520095928.png"><br><br>Dependiendo de la implementación del servicio, se puede reiniciar SAMBA usando:<br>systemctl restart smbd
+Copy<br>O<br>service smbd restart
+Copy<br>Nota: Esto depende de la distribución de linux que se llegue a usar.<br><br><br><br>mkdir -p /compartidosamba
+Copy<br><br>Escenarios comunes:<br>Nota: Los permisos de Linux prevalecen sobre los permisos de SAMBA.<br>
+Nota 2: si usais 777 sirve de lujo abierto para to cristo. (chmod 777)<br>a. Permisos de escritura para todos los usuarios: (yo uso este que funciona)<br>chmod o+w /compartidosamba
+Copy<br>Verificar permisos:<br>ls -al /compartidosamba/
+drwxr-xrwx 2 root root 4096 oct 16 13:44
+Copy<br>b. Directorio exclusivo para un usuario:<br>chown pepito /compartidosamba/
+Copy<br>Verificar permisos:<br>ls -al /compartidosamba/
+drwxr-xr-x 35 pepito pepito 4096 oct 16 11:19 pepito
+Copy<br>c. Directorio para un grupo de usuarios:<br>groupadd samba
+chgrp samba /compartidosamba2/
+chmod g+w /compartidosamba2/
+adduser pepito samba
+Copy<br>Verificar permisos:<br>ls -al /compartidosamba2/
+drwxrwxr-x 2 root samba 4096 oct 16 13:02 .
+Copy<br><br>Nota: tenemos que crearlo primero usando <br>adduser fernando
+Copy<br><img alt="Manual_de_Linux/samba/Pasted image 20240520100246.png" src="manual_de_linux\samba\pasted-image-20240520100246.png"><br>smbpasswd -a fernando
+Copy<br><img alt="Manual_de_Linux/samba/Pasted image 20240520100306.png" src="manual_de_linux\samba\pasted-image-20240520100306.png"><br><br>Editar el archivo de configuración:<br>nano /etc/samba/smb.conf
+Copy<br>Parámetros básicos:<br>
+<br>[nombre_de_recurso]: Nombre del recurso a conectar.
+<br>browseable: Si el nombre del recurso es visible desde la red.
+<br>path: Directorio compartido.
+<br>writable: Habilita escritura para el recurso.
+<br>valid users: Lista de usuarios con acceso permitido.
+<br>guest ok: Permite acceso a usuarios anónimos.
+<br>Ejemplo de configuración:<br>[smbcompartido]
+	comment = Compartido samba
+	path = /compartidosamba
+	valid users = fernando
+	writable = yes
+	browseable = yes
+	guest ok = no
+Copy<br><img alt="Manual_de_Linux/samba/Pasted image 20240520100400.png" src="manual_de_linux\samba\pasted-image-20240520100400.png"><br>
+Para compartir sin limitar usuarios:<br>[COMPARTIDO2]
+	path = /compartidosamba2/
+	writeable = yes
+	browseable = yes
+Copy<br><br>/etc/init.d/samba restart
+Copy<br>o<br>systemctl restart smbd
+Copy<br><img alt="Manual_de_Linux/samba/Pasted image 20240520100434.png" src="manual_de_linux\samba\pasted-image-20240520100434.png"><br><br><br><br>Crear punto de montaje:<br>mkdir -p /mnt/mipuntodemontaje
+Copy<br>Conectar carpeta compartida:<br>mount -t cifs -o username=pepito,password=pepe2000 //192.168.0.64/smbcompartido /mnt/mipuntodemontaje
+Copy<br><br><img alt="Manual_de_Linux/samba/Pasted image 20240520101345.png" src="manual_de_linux\samba\pasted-image-20240520101345.png"><br>
+Desconectar punto de montaje:<br>umount /mnt/mipuntodemontaje
+Copy<br>Desconectar un punto de montaje de forma alternativa:<br>Para esta operación, es necesario tener instalado fuse3.<br>apt install fuse3
+Copy<br>Luego, utiliza el siguiente comando para desconectar el punto de montaje:<br>fusermount -uz /mnt/mipuntodemontaje
+Copy<br><br>Presionar CTRL+L y teclear en la línea de direcciones:<br>smb://192.168.254.44/smbcompartido
+Copy<br><img alt="Manual_de_Linux/samba/Screenshot from 2024-05-20 10-21-28.png" src="manual_de_linux\samba\screenshot-from-2024-05-20-10-21-28.png"><br>
+Nota: CTRL+L es  el buscador de nautilus<br><br><br>Conectar carpeta compartida con una letra de unidad usando cmd:<br>C:\Users\antoniorodas&gt;net use G: \\192.168.254.44\smbcompartido alonso /user:fernando
+Copy<br>Tabla explicativa:<br><br><br>Teclear en el explorador de archivos de windows:<br>\\192.168.254.44\smbcompartido
+Copy<br>Nota: No usar el explorador de Internet para acceder a recursos compartidos de SAMBA.]]></description><link>manual_de_linux\samba\samba.html</link><guid isPermaLink="false">Manual_de_Linux/samba/samba.md</guid><pubDate>Mon, 20 May 2024 10:51:28 GMT</pubDate><enclosure url="manual_de_linux\samba\pasted-image-20240520095928.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_linux\samba\pasted-image-20240520095928.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[4. SSHFS]]></title><description><![CDATA[ 
+ <br><br>
+<br>Montaje permanente desde FSTAB:
+sudo nano /etc/fstab
+Copy
+Añadir la línea:
+sshfs#root@192.168.1.147:/ /mnt/ssh fuse defaults 0 0
+Copy
+
+<br>Montaje automático con claves exportadas:
+sudo mount -a
+Copy
+
+]]></description><link>manual_de_linux\ssh\relleno-ssh.html</link><guid isPermaLink="false">Manual_de_Linux/ssh/Relleno - SSH.md</guid><pubDate>Wed, 22 May 2024 12:22:25 GMT</pubDate></item><item><title><![CDATA[Manual de Utilidades SSH]]></title><description><![CDATA[ 
+ <br><br>SE REQUIERE SUPERUSUARIO<br><br>
+<br>Ejecutar un comando remoto:
+<br>ssh usuario@equipo comando
+Copy<br>  Ejemplo:<br>ssh antoniorodas@192.168.254.48 ps -ax
+Copy<br>Nota: Cambiar ps -ax Por el comando que necesiteis<br>
+<img alt="Manual_de_Linux/ssh/Pasted image 20240521173713.png" src="manual_de_linux\ssh\pasted-image-20240521173713.png"><br><br><br>
+<br>Sintaxis
+<br>scp usuario@equipo:/ruta/fichero_origen ruta/destino_local
+Copy<br>  Ejemplo:<br>scp antoniorodas@192.168.254.48:/home/antoniorodas/fichero.txt /tmp
+Copy<br>Nota
+En este ejemplo es desde la maquina "VMRodas.2" Hacia la maquina "VMRodas.1"<br>
+<img alt="Manual_de_Linux/ssh/Pasted image 20240521180216.png" src="manual_de_linux\ssh\pasted-image-20240521180216.png">
+<br>Explicación: La tabla explica cada componente del comando scp antoniorodas@192.168.254.44:/home/antoniorodas/fichero.txt /tmp.<br><br><br>
+<br>Sintaxis
+scp ruta/fichero_origen usuario@equipo:/ruta/destino_remoto
+Copy
+  Ejemplo:
+scp /home/antoniorodas/ficherito.txt antoniorodas@192.168.254.47:/tmp
+Copy
+  Ejemplo:Visual<br>
+<img alt="Manual_de_Linux/ssh/Pasted image 20240521174210.png" src="manual_de_linux\ssh\pasted-image-20240521174210.png"><br>
+Explicación: La tabla explica cada componente del comando scp /home/antoniorodas/ficherito.txt antoniorodas@192.168.254.47:/tmp.
+<br>Nota
+En este ejemplo es desde la maquina "VMRodas.1" Hacia la maquina "VMRodas.2" 
+<br><br><br><br>Antes de empezar, es necesario instalar un servicio que tenga una interfaz web. En este caso, utilizaremos Apache. Para instalarlo, ejecuta el siguiente comando:<br>sudo apt install apache2
+Copy<br>Nota
+Este manual asume que el servidor Apache se instalará en la máquina VMRodas.2 con la dirección IP 192.168.254.47. en vuestro caso la maquina y la ip que corresponda.
+<br><br>Desde la máquina cliente, establece un túnel SSH con el siguiente comando:<br>ssh antoniorodas@192.168.254.47 -Nf -L 999:192.168.254.47:80
+Copy<br><img alt="Manual_de_Linux/ssh/Pasted image 20240522132327.png" src="manual_de_linux\ssh\pasted-image-20240522132327.png"><br><br>ssh usuario@ipdelservidor -Nf -L puerto_local:ipdelservidor:puerto_remoto
+Copy<br>
+<br>-Nf: No abre una sesión en la máquina remota y el túnel permanece en segundo plano.
+<br>-L: Especifica la redirección de puertos local y remoto.
+Nota
+ Si os da este error ejecutarlo como usuario privilegiado<br>
+<img alt="Manual_de_Linux/ssh/Pasted image 20240522132256.png" src="manual_de_linux\ssh\pasted-image-20240522132256.png">
+
+
+<br><br>Una vez establecido el túnel, accede a la interfaz web de Apache en tu navegador mediante una de las siguientes direcciones:<br>http://localhost:999
+Copy<br>o<br>http://127.0.0.1:999
+Copy<br><br>Para verificar que el túnel SSH está activo, utiliza el siguiente comando:<br>netstat -putona
+Copy<br>Salida esperada:<br>tcp 0 0 127.0.0.1:999 0.0.0.0:* LISTEN 16709/ssh
+Copy<br><img alt="Manual_de_Linux/ssh/Pasted image 20240522132828.png" src="manual_de_linux\ssh\pasted-image-20240522132828.png"><br><br>Para cerrar el túnel SSH, mata el proceso utilizando el comando kill -9 [PID], donde [PID] es el identificador del proceso que está utilizando el túnel SSH.<br>kill -9 [Numero del proceso]
+Copy<br>Nota: Para encontrar el PID del proceso, puedes usar el comando ps aux | grep ssh.<br>
+<img alt="Manual_de_Linux/ssh/Pasted image 20240522132857.png" src="manual_de_linux\ssh\pasted-image-20240522132857.png"><br><br><br>Tenemos dos máquinas virtuales: una es VMRodas.1 con la IP 192.168.254.48 y la otra es VMRodas.2 con la IP 192.168.254.47. El objetivo es autenticarnos en la máquina remota sin el uso de contraseñas, es decir, mediante autenticación con claves públicas y privadas.<br>En este caso, nos vamos a autenticar desde la máquina VMRodas.1 con una clave generada y posteriormente importarla en la maq4.<br><br>Para generar las claves, ejecutamos el siguiente comando en la máquina VMRodas.1:<br>ssh-keygen
+Copy<br>Si todo ha salido bien, debemos tener una salida como esta:<br>
+<img alt="Manual_de_Linux/ssh/Pasted image 20240522134308.png" src="manual_de_linux\ssh\pasted-image-20240522134308.png"><br><br>Para copiar la clave pública a la máquina VMRodas.2 (IP: 192.168.254.47), ejecuta:<br>ssh-copy-id root@192.168.254.47
+Copy<br><br>Después de copiar las claves, verifica la autenticación sin contraseña. La verificación debería mostrar una salida similar a la siguiente:<br>Cosas a tener en cuenta: en ambas máquinas, tanto local como remota, tiene que haber exactamente el mismo usuario con el mismo nombre para poder copiar la clave correctamente.<br>Resultado FInal: (En ningun momento nos ha solicitado la contraseña de la maquina virtual.)<br><br>
+<br>Cliente: VMRodas.1 / 192.168.254.48
+<br>Servidor: VMRodas.2 / 192.168.254.47
+<br><br>
+<br>Instalar sshfs:
+sudo apt-get install sshfs
+Copy
+
+<br>Crear el punto de montaje:<br>
+bash     sudo mkdir -p /mnt/ssh     <br>
+<img alt="Manual_de_Linux/ssh/Pasted image 20240522142700.png" src="manual_de_linux\ssh\pasted-image-20240522142700.png">
+<br><br>
+<br>Conectarse desde el cliente y montar el sistema de archivos remoto:
+sudo sshfs root@192.168.254.47:/ /mnt/ssh
+Copy
+Si todo ha salido bien, el servidor remoto estará montado en la ruta /mnt/ssh.<br>
+<img alt="Manual_de_Linux/ssh/Pasted image 20240522142055.png" src="manual_de_linux\ssh\pasted-image-20240522142055.png">
+<br><br>
+<br>Desmontar el punto de montaje utilizando umount:
+sudo umount /mnt/ssh
+Copy
+Alternativamente, puedes usar fusermount después de instalar fuse3:
+sudo apt-get install fuse3
+sudo fusermount -uz /mnt/ssh
+Copy
+
+<br><br>
+<br>Objetivo:<br>
+Establecer un canal de comunicación seguro entre dos máquinas.
+
+<br>Maquinas:<br>
+Cliente:192.168.254.48 - VMRodas1 - Maquina A<br>
+Servidor:192.168.254.47 - VMRodas2 - Maquina B
+
+
+<br><br>Realizar esto en ambas maquinas tanto cliente como servidor.<br>
+<br>Instalaciones:
+sudo apt-get install ssh
+Copy
+  Configurar en /etc/ssh/sshd_config:<br>
+```plaintext<br>
+PermitTunnel yes
+![[Manual_de_Linux/ssh/Pasted image 20240522144739.png]]
+Reiniciar el servicio:
+```bash
+sudo systemctl restart ssh
+Copy
+<img alt="Manual_de_Linux/ssh/Pasted image 20240522144847.png" src="manual_de_linux\ssh\pasted-image-20240522144847.png">
+<br>Hablilitar IP Forwarding en IPv4:
+echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
+Copy
+<img alt="Pasted image 20240522144924.png" src="lib\media\pasted-image-20240522144924.png">
+
+<br>Puesta en marcha del servicio: Desde la maquina cliente unicamente.
+
+
+<br>sudo ssh -NTCf -w 0:0 root@192.168.254.47
+Copy<br><br>
+<br>
+Configuración del servicio:Conexiones punto a punto
+
+<br>
+Máquina A:<br>
+bash     sudo ifconfig tun0 192.168.0.2 pointopoint 192.168.0.1     
+
+<br>
+Máquina B:<br>
+bash     sudo ifconfig tun0 192.168.0.1 pointopoint 192.168.0.2     
+![[Pasted image 20240522153036.png]]
+Copy
+Nota Adicinal
+Si queremos tener salida a internet mediante la maquina servidor de ssh tenemos que usar el siguiente comando, para modificar la ruta del servidor
+
+
+
+
+<br>sudo route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.0.2 tun0
+Copy]]></description><link>manual_de_linux\ssh\ssh.html</link><guid isPermaLink="false">Manual_de_Linux/ssh/ssh.md</guid><pubDate>Wed, 22 May 2024 13:30:38 GMT</pubDate><enclosure url="manual_de_linux\ssh\pasted-image-20240521173713.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_linux\ssh\pasted-image-20240521173713.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Índice del Manual de Packet Tracer]]></title><description><![CDATA[ 
+ <br><br>Funcional y listo para usar<br>
+<br><a class="internal-link" data-href="nfs/NFS.md" href="manual_de_linux\nfs\nfs.html" target="_self" rel="noopener">NFS</a>
+<br><a class="internal-link" data-href="Manual_de_Linux/samba/samba.md" href="manual_de_linux\samba\samba.html" target="_self" rel="noopener">Samba</a>
+<br><a class="internal-link" data-href="Manual_de_Linux/ssh/ssh.md" href="manual_de_linux\ssh\ssh.html" target="_self" rel="noopener">SSH</a>
+<br>Proximamente<br>
+<br><a class="internal-link" data-href="Manual_de_Linux/comandos/comandos.md" href="manual_de_linux\comandos\comandos.html" target="_self" rel="noopener">Comandos Linux</a>
+]]></description><link>manual_de_linux\indice.html</link><guid isPermaLink="false">Manual_de_Linux/indice.md</guid><pubDate>Wed, 22 May 2024 12:45:23 GMT</pubDate></item></channel></rss>
