@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 22 May 2024 14:57:26 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 22 May 2024 14:57:24 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Manual de Comandos de Red en Linux]]></title><description><![CDATA[ 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 22 May 2024 20:46:29 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 22 May 2024 20:46:27 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Manual de Comandos de Red en Linux]]></title><description><![CDATA[ 
  <br><br><br><br>Para ver el estado de todas las interfaces de red:<br>ifconfig
 Copy<br>Para ver el estado de una interfaz específica, por ejemplo eth0:<br>ifconfig eth0
 Copy<br><br>Asignar una dirección IP y máscara de subred a una interfaz:<br>ifconfig eth0 192.168.1.100 netmask 255.255.255.0
@@ -58,9 +58,9 @@ sudo ifconfig eth0.10 192.168.10.1 netmask 255.255.255.0 up
 Copy
 
 <br>Este manual proporciona una guía básica para utilizar estos comandos de red en un sistema Linux. Cada capítulo cubre un comando específico y su uso principal para administrar y diagnosticar configuraciones y problemas de red.]]></description><link>manual_de_linux\comandos\comandos.html</link><guid isPermaLink="false">Manual_de_Linux/comandos/comandos.md</guid><pubDate>Wed, 22 May 2024 14:54:55 GMT</pubDate></item><item><title><![CDATA[Manual de Configuración de NFS Versión 4]]></title><description><![CDATA[ 
- <br><br>Se requiere administrador del sistema<br><br><br>Para instalar el paquete cliente , ejecutar el siguiente comando:<br>apt-get install nfs-common
+ <br><br>Se requiere administrador del sistema<br><br><br><br>Para instalar el paquete cliente , ejecutar el siguiente comando:<br>apt-get install nfs-common
 Copy<br><br>Para instalar el paquete del servidor, utiliza el siguiente comando:<br>apt-get install nfs-kernel-server
-Copy<br>Nota: La instalación del servidor puede no iniciar el servicio correctamente debido a posibles opciones inválidas en el archivo /etc/exports.<br><br><br>Para desactivar la autenticación Kerberos  editamos los siguientes archivos:<br>
+Copy<br>Nota: La instalación del servidor puede no iniciar el servicio correctamente debido a posibles opciones inválidas en el archivo /etc/exports.<br><br><br><br>Para desactivar la autenticación Kerberos  editamos los siguientes archivos:<br>
 <br>Editar /etc/default/nfs-kernel-server:
 <br>NEED_SVCGSSD="no"
 Copy<br>Foto del resultado:<br>
@@ -69,24 +69,26 @@ Copy<br>Foto del resultado:<br>
 <br>NEED_IDMAPD="yes"
 NEED_GSSD="no"
 Copy<br>Foto del resultado:<br>
-<img alt="Manual_de_Linux/nfs/Pasted image 20240519123301.png" src="manual_de_linux\nfs\pasted-image-20240519123301.png"><br><br>Exportamos dos directorios en la red local 192.198.128.0/24. Edite el archivo /etc/exports y añada las siguientes líneas:<br>NOTA: en este caso estamos exponiendo un directorio para un rango de IPv4 especificio.<br>/tmp 192.168.128.0/24(rw,nohide,insecure,no_subtree_check,async)
+<img alt="Manual_de_Linux/nfs/Pasted image 20240522224217.png" src="manual_de_linux\nfs\pasted-image-20240522224217.png"><br><br>Exportamos dos directorios en la red local 192.198.128.0/24. Edite el archivo /etc/exports y añada las siguientes líneas:<br>NOTA: en este caso estamos exponiendo un directorio para un rango de IPv4 especificio.<br>/tmp 192.168.128.0/24(rw,nohide,insecure,no_subtree_check,async)
 /home 192.168.128.0/24(rw,nohide,insecure,no_subtree_check,async)
 Copy<br>Foto del resultado:<img alt="Manual_de_Linux/nfs/Pasted image 20240519130222.png" src="manual_de_linux\nfs\pasted-image-20240519130222.png"><br><br>Reiniciar el servicio NFS para aplicar los cambios:<br>Metodo init.d<br>/etc/init.d/nfs-kernel-server restart
-Copy<br>Metodo systemctl:<br>Metodo service:<br><br>Para verificar los directorios compartidos, utilice el comando showmount:<br># showmount -e
+Copy<br>Metodo systemctl:<br>systemctl reload nfs-kernel-server
+Copy<br>Metodo service:<br>service nfs-kernel-server restart
+Copy<br><br>Para verificar los directorios compartidos, utilice el comando showmount:<br>#showmount -e
 Export list for debianv1:
 /home 192.168.128.0/24
 /tmp 192.168.128.0/24
-Copy<br>Foto Resultado Final:<img alt="Manual_de_Linux/nfs/Pasted image 20240519123900.png" src="manual_de_linux\nfs\pasted-image-20240519123900.png"><br><br><br>Igual que en el servidor, configure el cliente para el mapeo de identidades sin Kerberos. Edite el archivo /etc/default/nfs-common:<br>NEED_IDMAPD=yes
+Copy<br>Foto Resultado Final:<img alt="Manual_de_Linux/nfs/Pasted image 20240519123900.png" src="manual_de_linux\nfs\pasted-image-20240519123900.png"><br>Foto Resultado alternativo:<br>
+<img alt="Manual_de_Linux/nfs/Pasted image 20240519131541.png" src="manual_de_linux\nfs\pasted-image-20240519131541.png"><br><br><br>Igual que en el servidor, configure el cliente para el mapeo de identidades sin Kerberos. Edite el archivo /etc/default/nfs-common:<br>NEED_IDMAPD=yes
 NEED_GSSD=no
 Copy<br>Foto del resultado final:<br>
-<img alt="Manual_de_Linux/nfs/Pasted image 20240519125249.png" src="manual_de_linux\nfs\pasted-image-20240519125249.png"><br><br>Reinicie el servicio nfs-common:<br>/etc/init.d/nfs-common restart
+<img alt="Manual_de_Linux/nfs/Pasted image 20240522224513.png" src="manual_de_linux\nfs\pasted-image-20240522224513.png"><br><br>Reinicie el servicio nfs-common:<br>/etc/init.d/nfs-common restart
 Copy<br><br>Cree los puntos de montaje en el cliente:<br>mkdir /mnt/mitmp
 mkdir /mnt/misusuarios
 Copy<br><br>Montar los volúmenes NFS:<br>mount -t nfs -o proto=tcp,port=2049 192.168.128.192:/tmp /mnt/mitmp
 mount -t nfs -o proto=tcp,port=2049 192.168.128.192:/home /mnt/misusuarios
 Copy<br>Foto del resultado final:<br>
-<img alt="Manual_de_Linux/nfs/Pasted image 20240519130430.png" src="manual_de_linux\nfs\pasted-image-20240519130430.png"><br>Foto Resultado alternativo:<br>
-<img alt="Manual_de_Linux/nfs/Pasted image 20240519131541.png" src="manual_de_linux\nfs\pasted-image-20240519131541.png">]]></description><link>manual_de_linux\nfs\nfs.html</link><guid isPermaLink="false">Manual_de_Linux/nfs/NFS.md</guid><pubDate>Mon, 20 May 2024 07:36:20 GMT</pubDate><enclosure url="manual_de_linux\nfs\pasted-image-20240519123108.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_linux\nfs\pasted-image-20240519123108.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Restos]]></title><description><![CDATA[ 
+<img alt="Manual_de_Linux/nfs/Pasted image 20240519130430.png" src="manual_de_linux\nfs\pasted-image-20240519130430.png">]]></description><link>manual_de_linux\nfs\nfs.html</link><guid isPermaLink="false">Manual_de_Linux/nfs/NFS.md</guid><pubDate>Wed, 22 May 2024 20:45:46 GMT</pubDate><enclosure url="manual_de_linux\nfs\pasted-image-20240519123108.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_linux\nfs\pasted-image-20240519123108.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Restos]]></title><description><![CDATA[ 
  <br><br><br>Cree el directorio que se va a exportar y utilice la opción bind para montar el sistema de archivos del servidor:<br># mkdir /exportacion
 # mkdir /exportacion/usuarios
 # mount --bind /home/ /exportacion/usuarios
@@ -163,7 +165,7 @@ Copy<br><br>Presionar CTRL+L y teclear en la línea de direcciones:<br>smb://192
 Copy<br><img alt="Manual_de_Linux/samba/Screenshot from 2024-05-20 10-21-28.png" src="manual_de_linux\samba\screenshot-from-2024-05-20-10-21-28.png"><br>
 Nota: CTRL+L es  el buscador de nautilus<br><br><br>Conectar carpeta compartida con una letra de unidad usando cmd:<br>C:\Users\antoniorodas&gt;net use G: \\192.168.254.44\smbcompartido alonso /user:fernando
 Copy<br>Tabla explicativa:<br><br><br>Teclear en el explorador de archivos de windows:<br>\\192.168.254.44\smbcompartido
-Copy<br>Nota: No usar el explorador de Internet para acceder a recursos compartidos de SAMBA.]]></description><link>manual_de_linux\samba\samba.html</link><guid isPermaLink="false">Manual_de_Linux/samba/samba.md</guid><pubDate>Mon, 20 May 2024 10:51:28 GMT</pubDate><enclosure url="manual_de_linux\samba\pasted-image-20240520095928.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_linux\samba\pasted-image-20240520095928.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[4. SSHFS]]></title><description><![CDATA[ 
+Copy<br>Nota: No usar el explorador de Internet para acceder a recursos compartidos de SAMBA.]]></description><link>manual_de_linux\samba\samba.html</link><guid isPermaLink="false">Manual_de_Linux/samba/samba.md</guid><pubDate>Wed, 22 May 2024 20:33:51 GMT</pubDate><enclosure url="manual_de_linux\samba\pasted-image-20240520095928.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_linux\samba\pasted-image-20240520095928.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[4. SSHFS]]></title><description><![CDATA[ 
  <br><br>
 <br>Montaje permanente desde FSTAB:
 sudo nano /etc/fstab
@@ -177,7 +179,9 @@ sudo mount -a
 Copy
 
 ]]></description><link>manual_de_linux\ssh\relleno-ssh.html</link><guid isPermaLink="false">Manual_de_Linux/ssh/Relleno - SSH.md</guid><pubDate>Wed, 22 May 2024 12:22:25 GMT</pubDate></item><item><title><![CDATA[Manual de Utilidades SSH]]></title><description><![CDATA[ 
- <br><br>SE REQUIERE SUPERUSUARIO<br><br>
+ <br><br>SE REQUIERE SUPERUSUARIO<br>y habilitar las siguientes directicas en el fichero /etc/ssh/sshd_config/<br>PermitRootLogin yes
+PermitTunnel yes
+Copy<br><img alt="Manual_de_Linux/ssh/Pasted image 20240522223333.png" src="manual_de_linux\ssh\pasted-image-20240522223333.png"><br><br>
 <br>Ejecutar un comando remoto:
 <br>ssh usuario@equipo comando
 Copy<br>  Ejemplo:<br>ssh antoniorodas@192.168.254.48 ps -ax
@@ -274,7 +278,7 @@ Copy
 <br>Hablilitar IP Forwarding en IPv4:
 echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
 Copy
-<img alt="Pasted image 20240522144924.png" src="lib\media\pasted-image-20240522144924.png">
+<img alt="Manual_de_Linux/ssh/Pasted image 20240522144924.png" src="manual_de_linux\ssh\pasted-image-20240522144924.png">
 
 <br>Puesta en marcha del servicio: Desde la maquina cliente unicamente.
 
@@ -286,7 +290,7 @@ Configuración del servicio:Conexiones punto a punto
 
 <br>
 Máquina A:<br>
-bash     sudo ifconfig tun0 192.168.0.2 pointopoint 192.168.0.1     
+Shell     sudo ifconfig tun0 192.168.0.2 pointopoint 192.168.0.1     
 
 <br>
 Máquina B:<br>
@@ -300,7 +304,7 @@ Si queremos tener salida a internet mediante la maquina servidor de ssh tenemos 
 
 
 <br>sudo route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.0.2 tun0
-Copy]]></description><link>manual_de_linux\ssh\ssh.html</link><guid isPermaLink="false">Manual_de_Linux/ssh/ssh.md</guid><pubDate>Wed, 22 May 2024 13:30:38 GMT</pubDate><enclosure url="manual_de_linux\ssh\pasted-image-20240521173713.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_linux\ssh\pasted-image-20240521173713.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Índice del Manual de Packet Tracer]]></title><description><![CDATA[ 
+Copy]]></description><link>manual_de_linux\ssh\ssh.html</link><guid isPermaLink="false">Manual_de_Linux/ssh/ssh.md</guid><pubDate>Wed, 22 May 2024 20:34:50 GMT</pubDate><enclosure url="manual_de_linux\ssh\pasted-image-20240522223333.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_linux\ssh\pasted-image-20240522223333.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Índice del Manual de Packet Tracer]]></title><description><![CDATA[ 
  <br><br>Funcional y listo para usar<br>
 <br><a class="internal-link" data-href="nfs/NFS.md" href="manual_de_linux\nfs\nfs.html" target="_self" rel="noopener">NFS</a>
 <br><a class="internal-link" data-href="Manual_de_Linux/samba/samba.md" href="manual_de_linux\samba\samba.html" target="_self" rel="noopener">Samba</a>

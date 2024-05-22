@@ -1,6 +1,6 @@
 {
   "vaultName": "Vault2 - Manuales",
-  "lastExport": 1716389844012,
+  "lastExport": 1716410787067,
   "pluginVersion": "1.8.01",
   "validBodyClasses": "publish css-settings-manager theme-dark show-inline-title",
   "useCustomHeadContent": false,
@@ -9,12 +9,12 @@
     "Manual_de_Linux/comandos/comandos.md",
     "Manual_de_Linux/nfs/NFS.md",
     "Manual_de_Linux/nfs/Pasted image 20240519123108.png",
-    "Manual_de_Linux/nfs/Pasted image 20240519123301.png",
     "Manual_de_Linux/nfs/Pasted image 20240519123900.png",
-    "Manual_de_Linux/nfs/Pasted image 20240519125249.png",
     "Manual_de_Linux/nfs/Pasted image 20240519130222.png",
     "Manual_de_Linux/nfs/Pasted image 20240519130430.png",
     "Manual_de_Linux/nfs/Pasted image 20240519131541.png",
+    "Manual_de_Linux/nfs/Pasted image 20240522224217.png",
+    "Manual_de_Linux/nfs/Pasted image 20240522224513.png",
     "Manual_de_Linux/nfs/Restos.md",
     "Manual_de_Linux/samba/Pasted image 20240520095928.png",
     "Manual_de_Linux/samba/Pasted image 20240520100246.png",
@@ -44,11 +44,14 @@
     "Manual_de_Linux/ssh/Pasted image 20240522142700.png",
     "Manual_de_Linux/ssh/Pasted image 20240522144739.png",
     "Manual_de_Linux/ssh/Pasted image 20240522144847.png",
+    "Manual_de_Linux/ssh/Pasted image 20240522144924.png",
+    "Manual_de_Linux/ssh/Pasted image 20240522145122.png",
+    "Manual_de_Linux/ssh/Pasted image 20240522145124.png",
+    "Manual_de_Linux/ssh/Pasted image 20240522153036.png",
+    "Manual_de_Linux/ssh/Pasted image 20240522223333.png",
     "Manual_de_Linux/ssh/Relleno - SSH.md",
     "Manual_de_Linux/ssh/ssh.md",
     "Manual_de_Linux/indice.md",
-    "lib/media/pasted-image-20240522144924.png",
-    "lib/media/pasted-image-20240522145124.png",
     "lib/scripts/graph-wasm.wasm",
     "lib/fonts/94f2f163d4b698242fef.otf",
     "lib/fonts/72505e6a122c6acd5471.woff2",
@@ -110,112 +113,112 @@
   ],
   "fileInfo": {
     "Manual_de_Linux/comandos/comandos.md": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 5078,
       "exportedPath": "manual_de_linux/comandos/comandos.html",
       "dependencies": []
     },
     "Manual_de_Linux/nfs/NFS.md": {
-      "modifiedTime": 1716389844012,
-      "sourceSize": 2915,
+      "modifiedTime": 1716410787067,
+      "sourceSize": 3018,
       "exportedPath": "manual_de_linux/nfs/nfs.html",
       "dependencies": [
         "manual_de_linux/nfs/pasted-image-20240519123108.png",
-        "manual_de_linux/nfs/pasted-image-20240519123301.png",
+        "manual_de_linux/nfs/pasted-image-20240522224217.png",
         "manual_de_linux/nfs/pasted-image-20240519130222.png",
         "manual_de_linux/nfs/pasted-image-20240519123900.png",
-        "manual_de_linux/nfs/pasted-image-20240519125249.png",
-        "manual_de_linux/nfs/pasted-image-20240519130430.png",
-        "manual_de_linux/nfs/pasted-image-20240519131541.png"
+        "manual_de_linux/nfs/pasted-image-20240519131541.png",
+        "manual_de_linux/nfs/pasted-image-20240522224513.png",
+        "manual_de_linux/nfs/pasted-image-20240519130430.png"
       ]
     },
     "Manual_de_Linux/nfs/Pasted image 20240519123108.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 52880,
       "exportedPath": "manual_de_linux/nfs/pasted-image-20240519123108.png",
       "dependencies": []
     },
-    "Manual_de_Linux/nfs/Pasted image 20240519123301.png": {
-      "modifiedTime": 1716389844012,
-      "sourceSize": 55913,
-      "exportedPath": "manual_de_linux/nfs/pasted-image-20240519123301.png",
-      "dependencies": []
-    },
     "Manual_de_Linux/nfs/Pasted image 20240519123900.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 21991,
       "exportedPath": "manual_de_linux/nfs/pasted-image-20240519123900.png",
       "dependencies": []
     },
-    "Manual_de_Linux/nfs/Pasted image 20240519125249.png": {
-      "modifiedTime": 1716389844012,
-      "sourceSize": 15160,
-      "exportedPath": "manual_de_linux/nfs/pasted-image-20240519125249.png",
-      "dependencies": []
-    },
     "Manual_de_Linux/nfs/Pasted image 20240519130222.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 46336,
       "exportedPath": "manual_de_linux/nfs/pasted-image-20240519130222.png",
       "dependencies": []
     },
     "Manual_de_Linux/nfs/Pasted image 20240519130430.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 13116,
       "exportedPath": "manual_de_linux/nfs/pasted-image-20240519130430.png",
       "dependencies": []
     },
     "Manual_de_Linux/nfs/Pasted image 20240519131541.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 15176,
       "exportedPath": "manual_de_linux/nfs/pasted-image-20240519131541.png",
       "dependencies": []
     },
+    "Manual_de_Linux/nfs/Pasted image 20240522224217.png": {
+      "modifiedTime": 1716410787067,
+      "sourceSize": 77418,
+      "exportedPath": "manual_de_linux/nfs/pasted-image-20240522224217.png",
+      "dependencies": []
+    },
+    "Manual_de_Linux/nfs/Pasted image 20240522224513.png": {
+      "modifiedTime": 1716410787067,
+      "sourceSize": 125098,
+      "exportedPath": "manual_de_linux/nfs/pasted-image-20240522224513.png",
+      "dependencies": []
+    },
     "Manual_de_Linux/nfs/Restos.md": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 1623,
       "exportedPath": "manual_de_linux/nfs/restos.html",
       "dependencies": []
     },
     "Manual_de_Linux/samba/Pasted image 20240520095928.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 149470,
       "exportedPath": "manual_de_linux/samba/pasted-image-20240520095928.png",
       "dependencies": []
     },
     "Manual_de_Linux/samba/Pasted image 20240520100246.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 59152,
       "exportedPath": "manual_de_linux/samba/pasted-image-20240520100246.png",
       "dependencies": []
     },
     "Manual_de_Linux/samba/Pasted image 20240520100306.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 8286,
       "exportedPath": "manual_de_linux/samba/pasted-image-20240520100306.png",
       "dependencies": []
     },
     "Manual_de_Linux/samba/Pasted image 20240520100400.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 115620,
       "exportedPath": "manual_de_linux/samba/pasted-image-20240520100400.png",
       "dependencies": []
     },
     "Manual_de_Linux/samba/Pasted image 20240520100434.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 11546,
       "exportedPath": "manual_de_linux/samba/pasted-image-20240520100434.png",
       "dependencies": []
     },
     "Manual_de_Linux/samba/Pasted image 20240520101345.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 181733,
       "exportedPath": "manual_de_linux/samba/pasted-image-20240520101345.png",
       "dependencies": []
     },
     "Manual_de_Linux/samba/samba.md": {
-      "modifiedTime": 1716389844012,
-      "sourceSize": 7496,
+      "modifiedTime": 1716410787067,
+      "sourceSize": 7488,
       "exportedPath": "manual_de_linux/samba/samba.html",
       "dependencies": [
         "manual_de_linux/samba/pasted-image-20240520095928.png",
@@ -228,142 +231,173 @@
       ]
     },
     "Manual_de_Linux/samba/Screenshot from 2024-05-20 10-21-28.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 32808,
       "exportedPath": "manual_de_linux/samba/screenshot-from-2024-05-20-10-21-28.png",
       "dependencies": []
     },
     "Manual_de_Linux/ssh/Pasted image 20240521173713.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 47997,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240521173713.png",
       "dependencies": []
     },
     "Manual_de_Linux/ssh/Pasted image 20240521174210.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 36403,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240521174210.png",
       "dependencies": []
     },
     "Manual_de_Linux/ssh/Pasted image 20240521180212.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 74893,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240521180212.png",
       "dependencies": []
     },
     "Manual_de_Linux/ssh/Pasted image 20240521180216.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 74893,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240521180216.png",
       "dependencies": []
     },
     "Manual_de_Linux/ssh/Pasted image 20240522132252.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 61518,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522132252.png",
       "dependencies": []
     },
     "Manual_de_Linux/ssh/Pasted image 20240522132254.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 61518,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522132254.png",
       "dependencies": []
     },
     "Manual_de_Linux/ssh/Pasted image 20240522132256.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 61518,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522132256.png",
       "dependencies": []
     },
     "Manual_de_Linux/ssh/Pasted image 20240522132327.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 44693,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522132327.png",
       "dependencies": []
     },
     "Manual_de_Linux/ssh/Pasted image 20240522132705.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 336138,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522132705.png",
       "dependencies": []
     },
     "Manual_de_Linux/ssh/Pasted image 20240522132828.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 337112,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522132828.png",
       "dependencies": []
     },
     "Manual_de_Linux/ssh/Pasted image 20240522132857.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 27236,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522132857.png",
       "dependencies": []
     },
     "Manual_de_Linux/ssh/Pasted image 20240522134308.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 104984,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522134308.png",
       "dependencies": []
     },
     "Manual_de_Linux/ssh/Pasted image 20240522134514.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 80801,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522134514.png",
       "dependencies": []
     },
     "Manual_de_Linux/ssh/Pasted image 20240522134911.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 115381,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522134911.png",
       "dependencies": []
     },
     "Manual_de_Linux/ssh/Pasted image 20240522134946.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 209268,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522134946.png",
       "dependencies": []
     },
     "Manual_de_Linux/ssh/Pasted image 20240522142055.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 153256,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522142055.png",
       "dependencies": []
     },
     "Manual_de_Linux/ssh/Pasted image 20240522142659.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 44308,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522142659.png",
       "dependencies": []
     },
     "Manual_de_Linux/ssh/Pasted image 20240522142700.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 44308,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522142700.png",
       "dependencies": []
     },
     "Manual_de_Linux/ssh/Pasted image 20240522144739.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 110482,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522144739.png",
       "dependencies": []
     },
     "Manual_de_Linux/ssh/Pasted image 20240522144847.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 46361,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522144847.png",
       "dependencies": []
     },
+    "Manual_de_Linux/ssh/Pasted image 20240522144924.png": {
+      "modifiedTime": 1716410787067,
+      "sourceSize": 55415,
+      "exportedPath": "manual_de_linux/ssh/pasted-image-20240522144924.png",
+      "dependencies": []
+    },
+    "Manual_de_Linux/ssh/Pasted image 20240522145122.png": {
+      "modifiedTime": 1716410787067,
+      "sourceSize": 40718,
+      "exportedPath": "manual_de_linux/ssh/pasted-image-20240522145122.png",
+      "dependencies": []
+    },
+    "Manual_de_Linux/ssh/Pasted image 20240522145124.png": {
+      "modifiedTime": 1716410787067,
+      "sourceSize": 40718,
+      "exportedPath": "manual_de_linux/ssh/pasted-image-20240522145124.png",
+      "dependencies": []
+    },
+    "Manual_de_Linux/ssh/Pasted image 20240522153036.png": {
+      "modifiedTime": 1716410787067,
+      "sourceSize": 177134,
+      "exportedPath": "manual_de_linux/ssh/pasted-image-20240522153036.png",
+      "dependencies": []
+    },
+    "Manual_de_Linux/ssh/Pasted image 20240522223333.png": {
+      "modifiedTime": 1716410787067,
+      "sourceSize": 100788,
+      "exportedPath": "manual_de_linux/ssh/pasted-image-20240522223333.png",
+      "dependencies": []
+    },
     "Manual_de_Linux/ssh/Relleno - SSH.md": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 268,
       "exportedPath": "manual_de_linux/ssh/relleno-ssh.html",
       "dependencies": []
     },
     "Manual_de_Linux/ssh/ssh.md": {
-      "modifiedTime": 1716389844012,
-      "sourceSize": 10176,
+      "modifiedTime": 1716410787067,
+      "sourceSize": 10406,
       "exportedPath": "manual_de_linux/ssh/ssh.html",
       "dependencies": [
+        "manual_de_linux/ssh/pasted-image-20240522223333.png",
         "manual_de_linux/ssh/pasted-image-20240521173713.png",
         "manual_de_linux/ssh/pasted-image-20240521180216.png",
         "manual_de_linux/ssh/pasted-image-20240521174210.png",
@@ -375,342 +409,348 @@
         "manual_de_linux/ssh/pasted-image-20240522142700.png",
         "manual_de_linux/ssh/pasted-image-20240522142055.png",
         "manual_de_linux/ssh/pasted-image-20240522144847.png",
-        "lib/media/pasted-image-20240522144924.png",
-        "lib/media/pasted-image-20240522145124.png"
+        "manual_de_linux/ssh/pasted-image-20240522144924.png",
+        "manual_de_linux/ssh/pasted-image-20240522145124.png"
       ]
     },
     "Manual_de_Linux/indice.md": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 235,
       "exportedPath": "manual_de_linux/indice.html",
       "dependencies": []
     },
     "manual_de_linux/nfs/pasted-image-20240519123108.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 52880,
       "exportedPath": "manual_de_linux/nfs/pasted-image-20240519123108.png",
       "dependencies": []
     },
-    "manual_de_linux/nfs/pasted-image-20240519123301.png": {
-      "modifiedTime": 1716389844012,
-      "sourceSize": 55913,
-      "exportedPath": "manual_de_linux/nfs/pasted-image-20240519123301.png",
+    "manual_de_linux/nfs/pasted-image-20240522224217.png": {
+      "modifiedTime": 1716410787067,
+      "sourceSize": 77418,
+      "exportedPath": "manual_de_linux/nfs/pasted-image-20240522224217.png",
       "dependencies": []
     },
     "manual_de_linux/nfs/pasted-image-20240519130222.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 46336,
       "exportedPath": "manual_de_linux/nfs/pasted-image-20240519130222.png",
       "dependencies": []
     },
     "manual_de_linux/nfs/pasted-image-20240519123900.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 21991,
       "exportedPath": "manual_de_linux/nfs/pasted-image-20240519123900.png",
       "dependencies": []
     },
-    "manual_de_linux/nfs/pasted-image-20240519125249.png": {
-      "modifiedTime": 1716389844012,
-      "sourceSize": 15160,
-      "exportedPath": "manual_de_linux/nfs/pasted-image-20240519125249.png",
-      "dependencies": []
-    },
-    "manual_de_linux/nfs/pasted-image-20240519130430.png": {
-      "modifiedTime": 1716389844012,
-      "sourceSize": 13116,
-      "exportedPath": "manual_de_linux/nfs/pasted-image-20240519130430.png",
-      "dependencies": []
-    },
     "manual_de_linux/nfs/pasted-image-20240519131541.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 15176,
       "exportedPath": "manual_de_linux/nfs/pasted-image-20240519131541.png",
       "dependencies": []
     },
+    "manual_de_linux/nfs/pasted-image-20240522224513.png": {
+      "modifiedTime": 1716410787067,
+      "sourceSize": 125098,
+      "exportedPath": "manual_de_linux/nfs/pasted-image-20240522224513.png",
+      "dependencies": []
+    },
+    "manual_de_linux/nfs/pasted-image-20240519130430.png": {
+      "modifiedTime": 1716410787067,
+      "sourceSize": 13116,
+      "exportedPath": "manual_de_linux/nfs/pasted-image-20240519130430.png",
+      "dependencies": []
+    },
     "manual_de_linux/samba/pasted-image-20240520095928.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 149470,
       "exportedPath": "manual_de_linux/samba/pasted-image-20240520095928.png",
       "dependencies": []
     },
     "manual_de_linux/samba/pasted-image-20240520100246.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 59152,
       "exportedPath": "manual_de_linux/samba/pasted-image-20240520100246.png",
       "dependencies": []
     },
     "manual_de_linux/samba/pasted-image-20240520100306.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 8286,
       "exportedPath": "manual_de_linux/samba/pasted-image-20240520100306.png",
       "dependencies": []
     },
     "manual_de_linux/samba/pasted-image-20240520100400.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 115620,
       "exportedPath": "manual_de_linux/samba/pasted-image-20240520100400.png",
       "dependencies": []
     },
     "manual_de_linux/samba/pasted-image-20240520100434.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 11546,
       "exportedPath": "manual_de_linux/samba/pasted-image-20240520100434.png",
       "dependencies": []
     },
     "manual_de_linux/samba/pasted-image-20240520101345.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 181733,
       "exportedPath": "manual_de_linux/samba/pasted-image-20240520101345.png",
       "dependencies": []
     },
     "manual_de_linux/samba/screenshot-from-2024-05-20-10-21-28.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 32808,
       "exportedPath": "manual_de_linux/samba/screenshot-from-2024-05-20-10-21-28.png",
       "dependencies": []
     },
+    "manual_de_linux/ssh/pasted-image-20240522223333.png": {
+      "modifiedTime": 1716410787067,
+      "sourceSize": 100788,
+      "exportedPath": "manual_de_linux/ssh/pasted-image-20240522223333.png",
+      "dependencies": []
+    },
     "manual_de_linux/ssh/pasted-image-20240521173713.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 47997,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240521173713.png",
       "dependencies": []
     },
     "manual_de_linux/ssh/pasted-image-20240521180216.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 74893,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240521180216.png",
       "dependencies": []
     },
     "manual_de_linux/ssh/pasted-image-20240521174210.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 36403,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240521174210.png",
       "dependencies": []
     },
     "manual_de_linux/ssh/pasted-image-20240522132327.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 44693,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522132327.png",
       "dependencies": []
     },
     "manual_de_linux/ssh/pasted-image-20240522132256.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 61518,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522132256.png",
       "dependencies": []
     },
     "manual_de_linux/ssh/pasted-image-20240522132828.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 337112,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522132828.png",
       "dependencies": []
     },
     "manual_de_linux/ssh/pasted-image-20240522132857.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 27236,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522132857.png",
       "dependencies": []
     },
     "manual_de_linux/ssh/pasted-image-20240522134308.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 104984,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522134308.png",
       "dependencies": []
     },
     "manual_de_linux/ssh/pasted-image-20240522142700.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 44308,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522142700.png",
       "dependencies": []
     },
     "manual_de_linux/ssh/pasted-image-20240522142055.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 153256,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522142055.png",
       "dependencies": []
     },
     "manual_de_linux/ssh/pasted-image-20240522144847.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 46361,
       "exportedPath": "manual_de_linux/ssh/pasted-image-20240522144847.png",
       "dependencies": []
     },
-    "lib/media/pasted-image-20240522144924.png": {
-      "modifiedTime": 1716389844012,
+    "manual_de_linux/ssh/pasted-image-20240522144924.png": {
+      "modifiedTime": 1716410787067,
       "sourceSize": 55415,
-      "exportedPath": "lib/media/pasted-image-20240522144924.png",
+      "exportedPath": "manual_de_linux/ssh/pasted-image-20240522144924.png",
       "dependencies": []
     },
-    "lib/media/pasted-image-20240522145124.png": {
-      "modifiedTime": 1716389844012,
+    "manual_de_linux/ssh/pasted-image-20240522145124.png": {
+      "modifiedTime": 1716410787067,
       "sourceSize": 40718,
-      "exportedPath": "lib/media/pasted-image-20240522145124.png",
+      "exportedPath": "manual_de_linux/ssh/pasted-image-20240522145124.png",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.wasm": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 23377,
       "exportedPath": "lib/scripts/graph-wasm.wasm",
       "dependencies": []
     },
     "lib/fonts/94f2f163d4b698242fef.otf": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 66800,
       "exportedPath": "lib/fonts/94f2f163d4b698242fef.otf",
       "dependencies": []
     },
     "lib/fonts/72505e6a122c6acd5471.woff2": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 104232,
       "exportedPath": "lib/fonts/72505e6a122c6acd5471.woff2",
       "dependencies": []
     },
     "lib/fonts/2d5198822ab091ce4305.woff2": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 104332,
       "exportedPath": "lib/fonts/2d5198822ab091ce4305.woff2",
       "dependencies": []
     },
     "lib/fonts/c8ba52b05a9ef10f4758.woff2": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 98868,
       "exportedPath": "lib/fonts/c8ba52b05a9ef10f4758.woff2",
       "dependencies": []
     },
     "lib/fonts/cb10ffd7684cd9836a05.woff2": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 106876,
       "exportedPath": "lib/fonts/cb10ffd7684cd9836a05.woff2",
       "dependencies": []
     },
     "lib/fonts/b5f0f109bc88052d4000.woff2": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 105804,
       "exportedPath": "lib/fonts/b5f0f109bc88052d4000.woff2",
       "dependencies": []
     },
     "lib/fonts/cbe0ae49c52c920fd563.woff2": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 106108,
       "exportedPath": "lib/fonts/cbe0ae49c52c920fd563.woff2",
       "dependencies": []
     },
     "lib/fonts/535a6cf662596b3bd6a6.woff2": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 111708,
       "exportedPath": "lib/fonts/535a6cf662596b3bd6a6.woff2",
       "dependencies": []
     },
     "lib/fonts/70cc7ff27245e82ad414.ttf": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 192740,
       "exportedPath": "lib/fonts/70cc7ff27245e82ad414.ttf",
       "dependencies": []
     },
     "lib/fonts/454577c22304619db035.ttf": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 161376,
       "exportedPath": "lib/fonts/454577c22304619db035.ttf",
       "dependencies": []
     },
     "lib/fonts/52ac8f3034507f1d9e53.ttf": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 191568,
       "exportedPath": "lib/fonts/52ac8f3034507f1d9e53.ttf",
       "dependencies": []
     },
     "lib/fonts/05b618077343fbbd92b7.ttf": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 155288,
       "exportedPath": "lib/fonts/05b618077343fbbd92b7.ttf",
       "dependencies": []
     },
     "lib/fonts/4bb6ac751d1c5478ff3a.woff2": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 7876,
       "exportedPath": "lib/fonts/4bb6ac751d1c5478ff3a.woff2",
       "dependencies": []
     },
     "lib/media/874d8b8e340f75575caa.svg": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 317,
       "exportedPath": "lib/media/874d8b8e340f75575caa.svg",
       "dependencies": []
     },
     "lib/html/file-tree.html": {
-      "modifiedTime": 1716389844012,
-      "sourceSize": 19746,
+      "modifiedTime": 1716410787067,
+      "sourceSize": 21746,
       "exportedPath": "lib/html/file-tree.html",
       "dependencies": []
     },
     "lib/scripts/webpage.js": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 47290,
       "exportedPath": "lib/scripts/webpage.js",
       "dependencies": []
     },
     "lib/scripts/graph-view.js": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 15519,
       "exportedPath": "lib/scripts/graph-view.js",
       "dependencies": []
     },
     "lib/scripts/graph-wasm.js": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 14021,
       "exportedPath": "lib/scripts/graph-wasm.js",
       "dependencies": []
     },
     "lib/scripts/graph-render-worker.js": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 5179,
       "exportedPath": "lib/scripts/graph-render-worker.js",
       "dependencies": []
     },
     "lib/scripts/tinycolor.js": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 29832,
       "exportedPath": "lib/scripts/tinycolor.js",
       "dependencies": []
     },
     "lib/scripts/pixi.js": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 449509,
       "exportedPath": "lib/scripts/pixi.js",
       "dependencies": []
     },
     "lib/scripts/minisearch.js": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 29422,
       "exportedPath": "lib/scripts/minisearch.js",
       "dependencies": []
     },
     "lib/media/favicon.png": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 1105,
       "exportedPath": "lib/media/favicon.png",
       "dependencies": []
     },
     "lib/scripts/graph-data.js": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 602,
       "exportedPath": "lib/scripts/graph-data.js",
       "dependencies": []
     },
     "lib/styles/obsidian.css": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 157722,
       "exportedPath": "lib/styles/obsidian.css",
       "dependencies": []
     },
     "lib/styles/global-variable-styles.css": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 239,
       "exportedPath": "lib/styles/global-variable-styles.css",
       "dependencies": []
     },
     "lib/styles/main-styles.css": {
-      "modifiedTime": 1716389844012,
+      "modifiedTime": 1716410787067,
       "sourceSize": 23130,
       "exportedPath": "lib/styles/main-styles.css",
       "dependencies": []
