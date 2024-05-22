@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 20 May 2024 10:17:05 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 20 May 2024 10:17:04 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[comandos]]></title><description><![CDATA[ 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Vault2 - Manuales]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib\media\favicon.png</url><title>Vault2 - Manuales</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Wed, 22 May 2024 12:11:57 GMT</lastBuildDate><atom:link href="lib\rss.xml" rel="self" type="application/rss+xml"/><pubDate>Wed, 22 May 2024 12:11:54 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[comandos]]></title><description><![CDATA[ 
  ]]></description><link>manual_de_linux\comandos\comandos.html</link><guid isPermaLink="false">Manual_de_Linux/comandos/comandos.md</guid><pubDate>Mon, 20 May 2024 08:29:02 GMT</pubDate></item><item><title><![CDATA[Manual de Configuración de NFS Versión 4]]></title><description><![CDATA[ 
  <br><br>Se requiere administrador del sistema<br><br><br>Para instalar el paquete cliente , ejecutar el siguiente comando:<br>apt-get install nfs-common
 Copy<br><br>Para instalar el paquete del servidor, utiliza el siguiente comando:<br>apt-get install nfs-kernel-server
@@ -103,66 +103,72 @@ Copy<br>Desconectar un punto de montaje de forma alternativa:<br>Para esta opera
 Copy<br>Luego, utiliza el siguiente comando para desconectar el punto de montaje:<br>fusermount -uz /mnt/mipuntodemontaje
 Copy<br><br>Presionar CTRL+L y teclear en la línea de direcciones:<br>smb://192.168.254.44/smbcompartido
 Copy<br><img alt="Manual_de_Linux/samba/Screenshot from 2024-05-20 10-21-28.png" src="manual_de_linux\samba\screenshot-from-2024-05-20-10-21-28.png"><br>
-Nota: CTRL+L es  el buscador de nautilus<br><br><br>Conectar carpeta compartida con una letra de unidad usando:<br>C:\Users\antoniorodas&gt;net use G: \\192.168.254.44\smbcompartido alonso /user:fernando
-Copy<br>Tabla explicativa:<br><br><br>Teclear en la línea de direcciones:<br>\\192.168.254.44\smbcompartido
-Copy<br>Nota: No usar el explorador de Internet para acceder a recursos compartidos de SAMBA.]]></description><link>manual_de_linux\samba\samba.html</link><guid isPermaLink="false">Manual_de_Linux/samba/samba.md</guid><pubDate>Mon, 20 May 2024 08:25:02 GMT</pubDate><enclosure url="manual_de_linux\samba\pasted-image-20240520095928.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_linux\samba\pasted-image-20240520095928.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Manual de Utilidades SSH]]></title><description><![CDATA[ 
+Nota: CTRL+L es  el buscador de nautilus<br><br><br>Conectar carpeta compartida con una letra de unidad usando cmd:<br>C:\Users\antoniorodas&gt;net use G: \\192.168.254.44\smbcompartido alonso /user:fernando
+Copy<br>Tabla explicativa:<br><br><br>Teclear en el explorador de archivos de windows:<br>\\192.168.254.44\smbcompartido
+Copy<br>Nota: No usar el explorador de Internet para acceder a recursos compartidos de SAMBA.]]></description><link>manual_de_linux\samba\samba.html</link><guid isPermaLink="false">Manual_de_Linux/samba/samba.md</guid><pubDate>Mon, 20 May 2024 10:51:28 GMT</pubDate><enclosure url="manual_de_linux\samba\pasted-image-20240520095928.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_linux\samba\pasted-image-20240520095928.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Manual de Utilidades SSH]]></title><description><![CDATA[ 
  <br><br><br>
 <br>Ejecutar un comando remoto:
 <br>ssh usuario@equipo comando
-Copy<br>  Ejemplo:<br>ssh antoniorodas@192.168.254.44 ps -ax
-Copy<br>Nota: Cambiar ps -ax Por el comando que necesiteis<br><br><br>
+Copy<br>  Ejemplo:<br>ssh antoniorodas@192.168.254.48 ps -ax
+Copy<br>Nota: Cambiar ps -ax Por el comando que necesiteis<br>
+<img alt="Manual_de_Linux/ssh/Pasted image 20240521173713.png" src="manual_de_linux\ssh\pasted-image-20240521173713.png"><br><br><br>
 <br>Sintaxis
 <br>scp usuario@equipo:/ruta/fichero_origen ruta/destino_local
-Copy<br>  Ejemplo:<br>scp antoniorodas@192.168.254.44:/home/antoniorodas/fichero.txt /tmp
-Copy<br>Explicación: La tabla explica cada componente del comando scp antoniorodas@192.168.254.44:/home/antoniorodas/fichero.txt /tmp.<br><br><br>
+Copy<br>  Ejemplo:<br>scp antoniorodas@192.168.254.48:/home/antoniorodas/fichero.txt /tmp
+Copy<br>Nota
+En este ejemplo es desde la maquina "VMRodas.2" Hacia la maquina "VMRodas.1"<br>
+<img alt="Manual_de_Linux/ssh/Pasted image 20240521180216.png" src="manual_de_linux\ssh\pasted-image-20240521180216.png">
+<br>Explicación: La tabla explica cada componente del comando scp antoniorodas@192.168.254.44:/home/antoniorodas/fichero.txt /tmp.<br><br><br>
 <br>Sintaxis
 scp ruta/fichero_origen usuario@equipo:/ruta/destino_remoto
 Copy
-Ejemplo:
-scp /etc/hosts root@192.168.0.105:/etc
+  Ejemplo:
+scp /home/antoniorodas/ficherito.txt antoniorodas@192.168.254.47:/tmp
 Copy
-
-<br>Explicación: La tabla explica cada componente del comando scp /etc/hosts root@192.168.0.105:/etc.<br><br><br><br>
-<br>
-Establecer un túnel SSH:
-ssh usuario@192.168.1.32 -Nf -L 999:192.168.1.32:80
-Copy
-El parámetro -Nf es para que no se abra una sesión en la máquina remota y permanezca en segundo plano.
-Accede de forma segura en tu navegador tecleando:
-http://localhost:999
-Copy
-
-<br>
-Comprobación de la conexión con netstat:
-netstat -putona
-Copy
-Salida esperada:
-tcp 0 0 127.0.0.1:999 0.0.0.0:* LISTEN 16709/ssh
-Copy
-
-<br><br>
-<br>Generar y exportar claves SSH:
-
-<br>Generación de claves:
-ssh-keygen
-Copy
-
-<br>Copia de claves:
-ssh-copy-id usuario@192.168.1.105
-Copy
+  Ejemplo:Visual<br>
+<img alt="Manual_de_Linux/ssh/Pasted image 20240521174210.png" src="manual_de_linux\ssh\pasted-image-20240521174210.png"><br>
+Explicación: La tabla explica cada componente del comando scp /home/antoniorodas/ficherito.txt antoniorodas@192.168.254.47:/tmp.
+<br>Nota
+En este ejemplo es desde la maquina "VMRodas.1" Hacia la maquina "VMRodas.2" 
+<br><br><br><br>Antes de empezar, es necesario instalar un servicio que tenga una interfaz web. En este caso, utilizaremos Apache. Para instalarlo, ejecuta el siguiente comando:<br>sudo apt install apache2
+Copy<br>Nota
+Este manual asume que el servidor Apache se instalará en la máquina VMRodas.2 con la dirección IP 192.168.254.47. en vuestro caso la maquina y la ip que corresponda.
+<br><br>Desde la máquina cliente, establece un túnel SSH con el siguiente comando:<br>ssh antoniorodas@192.168.254.47 -Nf -L 999:192.168.254.47:80
+Copy<br><img alt="Manual_de_Linux/ssh/Pasted image 20240522132327.png" src="manual_de_linux\ssh\pasted-image-20240522132327.png"><br><br>ssh usuario@ipdelservidor -Nf -L puerto_local:ipdelservidor:puerto_remoto
+Copy<br>
+<br>-Nf: No abre una sesión en la máquina remota y el túnel permanece en segundo plano.
+<br>-L: Especifica la redirección de puertos local y remoto.
+Nota
+ Si os da este error ejecutarlo como usuario privilegiado<br>
+<img alt="Manual_de_Linux/ssh/Pasted image 20240522132256.png" src="manual_de_linux\ssh\pasted-image-20240522132256.png">
 
 
-
-<br><br>
+<br><br>Una vez establecido el túnel, accede a la interfaz web de Apache en tu navegador mediante una de las siguientes direcciones:<br>http://localhost:999
+Copy<br>o<br>http://127.0.0.1:999
+Copy<br><br>Para verificar que el túnel SSH está activo, utiliza el siguiente comando:<br>netstat -putona
+Copy<br>Salida esperada:<br>tcp 0 0 127.0.0.1:999 0.0.0.0:* LISTEN 16709/ssh
+Copy<br><img alt="Manual_de_Linux/ssh/Pasted image 20240522132828.png" src="manual_de_linux\ssh\pasted-image-20240522132828.png"><br><br>Para cerrar el túnel SSH, mata el proceso utilizando el comando kill -9 [PID], donde [PID] es el identificador del proceso que está utilizando el túnel SSH.<br>kill -9 [Numero del proceso]
+Copy<br>Nota: Para encontrar el PID del proceso, puedes usar el comando ps aux | grep ssh.<br>
+<img alt="Manual_de_Linux/ssh/Pasted image 20240522132857.png" src="manual_de_linux\ssh\pasted-image-20240522132857.png"><br><br><br>Tenemos dos máquinas virtuales: una es VMRodas.1 con la IP 192.168.254.48 y la otra es VMRodas.2 con la IP 192.168.254.47. El objetivo es autenticarnos en la máquina remota sin el uso de contraseñas, es decir, mediante autenticación con claves públicas y privadas.<br>En este caso, nos vamos a autenticar desde la máquina VMRodas.1 con una clave generada y posteriormente importarla en la maq4.<br><br>Para generar las claves, ejecutamos el siguiente comando en la máquina VMRodas.1:<br>ssh-keygen
+Copy<br>Si todo ha salido bien, debemos tener una salida como esta:<br>
+<img alt="Manual_de_Linux/ssh/Pasted image 20240522134308.png" src="manual_de_linux\ssh\pasted-image-20240522134308.png"><br><br>Para copiar la clave pública a la máquina VMRodas.2 (IP: 192.168.254.47), ejecuta:<br>ssh-copy-id root@192.168.254.47
+Copy<br><br>Después de copiar las claves, verifica la autenticación sin contraseña. La verificación debería mostrar una salida similar a la siguiente:<br>Cosas a tener en cuenta: en ambas máquinas, tanto local como remota, tiene que haber exactamente el mismo usuario con el mismo nombre para poder copiar la clave correctamente.<br>Resultado FInal: (En ningun momento nos ha solicitado la contraseña de la maquina virtual.)<br>
+<img alt="Manual_de_Linux/ssh/Pasted image 20240522134946.png" src="manual_de_linux\ssh\pasted-image-20240522134946.png"><br><br>Cliente:VMRodas.1 / 192.168.254.48<br>
+Servidor: VMRodas.2 / 192.168.254.47<br>
+Servidor:<br>
 <br>Instalación en el cliente:
 sudo apt-get install sshfs
 Copy
 
-<br>Crear punto de montaje y conectar desde el cliente:
+<br>**Crear punto de montaje
 sudo mkdir /mnt/ssh
-sudo sshfs root@192.168.1.147:/ /mnt/ssh
 Copy
 
+<br>y conectar desde el cliente:**
+
+
+<br>sudo sshfs root@192.168.1.147:/ /mnt/ssh
+Copy<br>
 <br>Desmontar el punto de montaje:
 sudo umount /mnt/ssh
 Copy
@@ -227,19 +233,11 @@ Copy
 
 
 
-]]></description><link>manual_de_linux\ssh\ssh.html</link><guid isPermaLink="false">Manual_de_Linux/ssh/ssh.md</guid><pubDate>Mon, 20 May 2024 09:24:15 GMT</pubDate></item><item><title><![CDATA[Índice del Manual de Packet Tracer]]></title><description><![CDATA[ 
+]]></description><link>manual_de_linux\ssh\ssh.html</link><guid isPermaLink="false">Manual_de_Linux/ssh/ssh.md</guid><pubDate>Wed, 22 May 2024 12:10:46 GMT</pubDate><enclosure url="manual_de_linux\ssh\pasted-image-20240521173713.png" length="0" type="image/png"/><content:encoded>&lt;figure&gt;&lt;img src=&quot;manual_de_linux\ssh\pasted-image-20240521173713.png&quot;&gt;&lt;/figure&gt;</content:encoded></item><item><title><![CDATA[Índice del Manual de Packet Tracer]]></title><description><![CDATA[ 
  <br><br>Funcional y listo para usar<br>
 <br><a class="internal-link" data-href="nfs/NFS.md" href="manual_de_linux\nfs\nfs.html" target="_self" rel="noopener">NFS</a>
 <br><a class="internal-link" data-href="Manual_de_Linux/samba/samba.md" href="manual_de_linux\samba\samba.html" target="_self" rel="noopener">Samba</a>
-<br>Proximamente<br>
-<br><a class="internal-link" data-href="Manual_de_Linux/ssh/ssh.md" href="manual_de_linux\ssh\ssh.html" target="_self" rel="noopener">SSH</a>
+<br><a class="internal-link" data-href="Manual_de_Linux/ssh/ssh.md" href="manual_de_linux\ssh\ssh.html" target="_self" rel="noopener">SSH</a><br>
+Proximamente
 <br><a class="internal-link" data-href="Manual_de_Linux/comandos/comandos.md" href="manual_de_linux\comandos\comandos.html" target="_self" rel="noopener">Comandos Linux</a>
-]]></description><link>manual_de_linux\indice.html</link><guid isPermaLink="false">Manual_de_Linux/indice.md</guid><pubDate>Mon, 20 May 2024 08:44:03 GMT</pubDate></item><item><title><![CDATA[Índice del Manual de Packet Tracer]]></title><description><![CDATA[ 
- <br><br>
-<br><a class="internal-link" data-href="Introducción.md" href="manual_de_packet_tracer-trozeado\introducción.html" target="_self" rel="noopener">Introducción</a>
-<br><a class="internal-link" data-href="nfs/NFS.md" href="manual_de_linux\nfs\nfs.html" target="_self" rel="noopener">NFS</a>
-<br><a class="internal-link" data-href="Manual_de_Linux/samba/samba.md" href="manual_de_linux\samba\samba.html" target="_self" rel="noopener">Samba</a>
-<br>Proximamente<br>
-<br><a class="internal-link" data-href="Manual_de_Linux/ssh/ssh.md" href="manual_de_linux\ssh\ssh.html" target="_self" rel="noopener">SSH</a>
-<br><a class="internal-link" data-href="Manual_de_Linux/comandos/comandos.md" href="manual_de_linux\comandos\comandos.html" target="_self" rel="noopener">Comandos Linux</a>
-]]></description><link>manual_de_linux\manual-linux.html</link><guid isPermaLink="false">Manual_de_Linux/Manual Linux.md</guid><pubDate>Mon, 20 May 2024 09:13:22 GMT</pubDate></item></channel></rss>
+]]></description><link>manual_de_linux\indice.html</link><guid isPermaLink="false">Manual_de_Linux/indice.md</guid><pubDate>Wed, 22 May 2024 11:51:44 GMT</pubDate></item></channel></rss>
